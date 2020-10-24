@@ -18,12 +18,12 @@ This is my project made in React, ***it is functional on production lathes***.
 
 ## Used API
 ```plain
-  null
+  https://newsapi.org/
 ```
 
 ## Used Dependencies
 ```plain
-  null
+  axios
 ```
 
 ## Images
