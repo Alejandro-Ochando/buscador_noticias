@@ -32,6 +32,7 @@ This is my project made in React, ***it is not functional on production lathes, 
 
 ## Live Demo
 
+***The API does not work in production environments, only on a local basis.***
 *  https://noticias-eeuu.netlify.app
 
 
