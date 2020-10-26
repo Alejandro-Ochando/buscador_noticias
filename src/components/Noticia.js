@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Noticia.module.css';
+import PropTypes from 'prop-types';
 
 
 const Noticia = ({ noticia }) => {
@@ -20,12 +21,10 @@ const Noticia = ({ noticia }) => {
             <div className="col s12 m12 l11">
                 <div className={`${styles.color} ${styles.margen} card`}>
                     {imagen}
-                    
                     <div className="card-content">
                     <h4>{title}</h4>
                         <p>{description}</p>
                     </div>
-
                     <div className="card-action">
                         <a
                             href={url}
@@ -38,5 +37,9 @@ const Noticia = ({ noticia }) => {
             </div>
      );
 }
- 
+
+Noticia.propTypes = {
+    noticia: PropTypes.object.isRequired
+};
+
 export default Noticia;

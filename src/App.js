@@ -32,9 +32,9 @@ function App() {
         <Formulario 
           guardarCategoria={guardarCategoria}
         />
-          <ListadoNoticias 
+        <ListadoNoticias 
             noticias={noticias}
-          />
+        />
       </div>
     </Fragment>
   );
