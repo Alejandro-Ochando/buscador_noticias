@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/pPYfKM0/React.png" alt="React" border="0">
 <p>
 
-# News search engine App  
+# News search engine App  [![Netlify Status](https://api.netlify.com/api/v1/badges/79d3fff3-3b72-4109-93d3-a23c2ddda1cb/deploy-status)](https://app.netlify.com/sites/noticias-eeuu/deploys)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 >Project fully incompleted.
 
-This is my project made in React, ***it is functional on production lathes***.
+This is my project made in React, ***it is not functional on production lathes, only in local educational settings***.
 
 
 ## Used API
@@ -23,16 +23,16 @@ This is my project made in React, ***it is functional on production lathes***.
 
 ## Used Dependencies
 ```plain
-  axios
+  npm install axios
 ```
 
 ## Images
 
-null
+<img src=https://i.ibb.co/72M33Wt/frontalnoticias.png>
 
 ## Live Demo
 
-*  null
+*  https://noticias-eeuu.netlify.app
 
 
 ## Console commands
