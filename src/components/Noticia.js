@@ -1,34 +1,41 @@
 import React from 'react';
+import styles from './Noticia.module.css';
 
 
 const Noticia = ({ noticia }) => {
     
     const { urlToImage, url, title, description, source } = noticia;
+    
+    const imagen = (urlToImage  || description) 
+        ?   
+            <div className="card-image">
+                <img src={urlToImage} alt={title}/>
+                <span className="card-title">{source.name}</span>
+            </div>
+        : 
+            null;       
+
 
     return ( 
-        <div className="col s12 m6 l4">
-            <div className="card">
-                <div className="card-image">
-                    <img src={urlToImage} alt={title}/>
-                    <span className="card-title">{source.name}</span>
-                </div>
-                
+            <div className="col s12 m12 l11">
+                <div className={`${styles.color} ${styles.margen} card`}>
+                    {imagen}
+                    
+                    <div className="card-content">
+                    <h4>{title}</h4>
+                        <p>{description}</p>
+                    </div>
 
-                <div className="card-content">
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                </div>
-
-                <div className="card-action">
-                    <a
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="waves-effect waves-light btn deep-orange lighten-1"
-                    >Ver Noticia Completa</a>
+                    <div className="card-action">
+                        <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className=" amber darken-2  waves-effect waves-light btn "
+                        >Ver Noticia Completa</a>
+                    </div>
                 </div>
             </div>
-        </div>
      );
 }
  
